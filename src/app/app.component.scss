@@ -1,0 +1,10 @@
+.app-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #8a5272, #734f6f, #5e4b68, #4b465c, #3e404e, #3d4553, #3c4a58, #3b4f5c, #386474, #2f7a88, #259197, #27a89f);
+}
+
+app-forms{
+    flex:1;
+}

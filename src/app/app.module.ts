@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router'
 import { HighlightModule } from 'ngx-highlightjs';
 
@@ -31,7 +31,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    HighlightModule
+    HighlightModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

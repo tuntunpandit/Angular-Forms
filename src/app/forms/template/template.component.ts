@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateComponent implements OnInit {
   states: Array<String> = ['AR', 'AL', 'CA', 'DC'];
+  user = {
+    'fname': 'Bob',
+    'lname': 'Marley'
+  }
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  submitForm(submittedForm) {
+    console.log("submittedForm", submittedForm);
+
+    console.log('Form', submittedForm.form.value);
+  }
 }

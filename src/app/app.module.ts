@@ -11,6 +11,7 @@ import { FormsComponent } from './forms/forms.component';
 import { TemplateComponent } from './forms/template/template.component';
 import { ReactiveComponent } from './forms/reactive/reactive.component';
 import { NestedComponent } from './forms/nested/nested.component';
+import { ZipValidatorDirective } from './forms/zip-validator.directive';
 
 const routes: Routes = [
   { path: '', redirectTo: 'template', pathMatch: 'full' },
@@ -26,7 +27,8 @@ const routes: Routes = [
     FormsComponent,
     TemplateComponent,
     ReactiveComponent,
-    NestedComponent
+    NestedComponent,
+    ZipValidatorDirective
   ],
   imports: [
     BrowserModule,

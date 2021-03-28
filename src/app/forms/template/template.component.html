@@ -112,12 +112,11 @@
                                     <label for="zipcode">Zip Code</label>
                                     <input type="text" ngModel name="zip" #zip="ngModel"
                                         [ngClass]="{'form-control': true, 'is-invalid': !zip?.valid && zip?.touched, 'is-valid': zip?.valid && zip?.touched}"
-                                        id="zipcode" placeholder="Enter city" pattern="^[0-9]{5}$" required>
-                                    <small *ngIf="zip?.errors?.required && zip?.touched"
+                                        id="zipcode" placeholder="Enter Zip Code" appZipValidator>
+                                    <small *ngIf="zip?.errors?.cus_req && zip?.touched"
                                         class="form-text custom-invalid-feedback">zip is required</small>
-                                    <small *ngIf="zip?.errors?.pattern && zip?.touched"
-                                        class="form-text custom-invalid-feedback">zip should be minimum 5 digit
-                                        long</small>
+                                    <small *ngIf="zip?.errors?.cus_pattern && zip?.touched"
+                                        class="form-text custom-invalid-feedback">{{zip?.errors?.cus_pattern}}</small>
                                 </div>
                             </div>
                         </div>
